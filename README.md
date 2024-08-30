@@ -1,5 +1,5 @@
-# End of Watch: Peace officers killed in the line of duty
-Tracking cases of American police officers killed in the line of duty. 
+# End of Watch
+Tracking cases of American peace officers killed in the line of duty
 
 ## Outputs
 
