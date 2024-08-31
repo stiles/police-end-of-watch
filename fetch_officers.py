@@ -3,7 +3,7 @@
 
 """
 Slain police officers in the US 
-This notebook scrapes and processes an line-of-duty deaths 
+This script scrapes and processes an line-of-duty deaths 
 among American police officers in the current year
 from the [Officer Down Memorial Page: https://www.odmp.org.
 """

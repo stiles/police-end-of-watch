@@ -1,9 +1,13 @@
 # End of Watch
 Tracking cases of law enforcement officers killed in the line of duty. 
 
-## Process
+![Officers killed by gunfire](visuals/fallen_officer_locations_gunfire.png)
+
+## About
 
 This code in this repository collects, processes and stores information about more than 25,000 American peace officers killed in the line of duty. The data comes from the [Officer Down Memorial Page](https://www.odmp.org/info/about-odmp), a non-profit group that honors fallen law enforcement personnel.
+
+## Process
 
 #### Scripts
 

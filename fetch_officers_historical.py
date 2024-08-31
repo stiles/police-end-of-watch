@@ -3,7 +3,7 @@
 
 """
 Slain police officers in the US
-This notebook scrapes and processes an unofficial directory of more than 25,000 
+This script scrapes and processes an unofficial directory of more than 25,000 
 line-of-duty deaths among American police officers since 1900 
 from the [Officer Down Memorial Page: https://www.odmp.org.
 """
