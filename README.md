@@ -69,7 +69,7 @@ The JSON file has a list of dictionaries. Each contains the following items:
 ```
 
 #### Slain officers, current year
-Formats: [CSV](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_{current_year}.csv) | [JSON](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_{current_year}.json)
+Formats: [CSV](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_2024.csv) | [JSON](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_2024.json)
 
 #### Slain officers archive, 1900-present
 Formats: [CSV](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_archive_1900_present.csv) | [JSON](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_archive_1900_present.json)
