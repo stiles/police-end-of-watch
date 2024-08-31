@@ -43,7 +43,18 @@ It's timed to run automatically at 6:29 pm Central Time on Sundays in memory of 
 
 ## Outputs
 
-The data are stored on Amazon S3 in CSV and JSON formats.
+The data are stored on Amazon S3 in CSV, JSON and GeoJSON formats.
+
+#### Slain officers, current year
+Formats: [CSV](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_2024.csv) | [JSON](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_2024.json)
+
+#### Slain officers archive, 1900-present
+Formats: [CSV](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_archive_1900_present.csv) | [JSON](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_archive_1900_present.json)
+
+#### Slain officers geographic archive, 1900-present
+Format: [GeoJSON](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_archive_1900_present.geojson)
+
+### JSON structure
 
 The JSON file has a list of dictionaries. Each contains the following items: 
 
@@ -72,11 +83,47 @@ The JSON file has a list of dictionaries. Each contains the following items:
     }
 ```
 
-#### Slain officers, current year
-Formats: [CSV](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_2024.csv) | [JSON](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_2024.json)
+### GeoJSON structure
 
-#### Slain officers archive, 1900-present
-Formats: [CSV](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_archive_1900_present.csv) | [JSON](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_archive_1900_present.json)
+The GeoJSON file has additional items for the country and a point geometry with coordinates: 
+
+```json
+{
+            "type": "Feature",
+            "properties": {
+                "name": "Police Officer Aubrey Wright Hawkins",
+                "officer_name": "Aubrey Wright Hawkins",
+                "title": "Police",
+                "department_name": "Irving Police Department",
+                "state_abbreviation": "TX",
+                "cause": "Gunfire",
+                "date": "2000-12-24",
+                "year": 2000,
+                "weekday": "Sunday",
+                "canine": false,
+                "url": "https://www.odmp.org/officer/15488-police-officer-aubrey-wright-hawkins",
+                "photo_url": "15488/125/15488.jpg",
+                "incident_description": "Police Officer Aubrey Hawkins was shot and killed after he and another officer responded to a robbery-in-progress at a local sporting goods store. \n\nOfficer Hawkins arrived at the store approximately three minutes after the call was made and interrupted the suspects, who were handcuffing and tying up the store employees. The suspects opened fire on Officer Hawkins, killing him. The seven suspects had escaped from a Texas prison two weeks prior to the incident when they stormed a guard tower and stole several weapons. Capital murder warrants were issued for all seven suspects.\n\nDuring the search for the suspects, Colorado State Trooper Jason Manspeaker was killed in an automobile crash while responding to investigate a sighting.\n\nApproximately one month after Officer Hawkins' murder, six of the suspects were apprehended, and the seventh committed suicide. All six suspects were convicted of Officer Hawkins' murder and sentenced to death. One was executed on August 14, 2008. The leader of the group was executed on February 29, 2012. A third suspect was executed on February 4, 2015, and a fourth was executed on December 6, 2018.\n\nOfficer Hawkins had served with the Irving Police Department for 15 months and previously served with the Kaufman Police Department and Tarrant County Hospital District Police Department for a total of 4 years. He is survived by his wife and son.\n\nAubrey Hawkins Lane in Irving was dedicated in his honor.",
+                "age": "29",
+                "tour": "5 years, 3 months",
+                "badge": "830",
+                "weapon": "Handgun",
+                "offender": "Four executed",
+                "lat": 32.8342248,
+                "lon": -96.9975519,
+                "index_right": 238,
+                "ADMIN": "United States of America",
+                "ISO_A3": "USA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -96.9975519,
+                    32.8342248
+                ]
+            }
+        }
+```
 
 ## Usage
 

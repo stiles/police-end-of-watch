@@ -118,8 +118,8 @@ for cause in selected_causes:
     # Close the figure to free up memory
     plt.close(fig)
     
-
+archive_with_country_gdf['date'] = archive_with_country_gdf['date'].astype(str)
 archive_with_country_gdf.to_file(
-    "data/geo/us_slain_police_officers_archive_1900_present.geojson",
+    "data/processed/us_slain_police_officers_archive_1900_present.geojson",
     driver="GeoJSON",
 )
