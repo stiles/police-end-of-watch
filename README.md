@@ -42,7 +42,7 @@ This process is imperfect, however, and needs adjustment so the resulting `title
 
 #### Geographic data
 
-- `process_officer_locations.py`: Creates a GeoDataFrame from an officer's locations using latitude and longitude coordinates provided by the source, adding a country name and ISO three-digit codes from reference files. It then plots a several static maps by the causes — gunfire, terrorist attacks and automobile crashes, among others — and stores them in the `visuals` directory. 
+- `process_officer_locations.py`: Creates a GeoDataFrame from an officer's locations using latitude and longitude coordinates provided by the source, adding a country name and ISO three-digit codes from reference files. It then plots several static maps facetting by the causes — gunfire, terrorist attacks and automobile crashes, among others — and stores them in the `visuals` directory. 
 
 #### Coming soon
 
