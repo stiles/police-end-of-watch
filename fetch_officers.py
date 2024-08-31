@@ -132,17 +132,16 @@ keep = [
     "photo_url",
 ]
 
-df["date"] = df["date"].astype(str)
-
 # Drop columns we don't need
 current_df = df.drop(["name", "eow", "agency"], axis=1)[keep].copy()
 
 # Import archive and remove any from the current year
 archive_src = pd.read_json('https://stilesdata.com/police-end-of-watch/us_slain_police_officers_archive_1900_present.json')
+archive_src['date'] = pd.to_datetime(archive_src['date']).dt.strftime('%Y-%m-%d')
 archive_df = archive_src.query(f'year!={current_year}').copy()
 
 # Combine current year incidents with archive of those from previous years
-combined_df = pd.concat([current_df, archive_df]).drop_duplicates(subset=['officer_name', 'date'])
+combined_df = pd.concat([current_df, archive_df]).drop_duplicates(subset=['officer_name', 'date']).sort_values('date')
 
 """
 Export

@@ -19,7 +19,7 @@ from bs4 import BeautifulSoup
 # Dates
 start_year = 1900
 current_year = int(pd.Timestamp("today").strftime("%Y"))
-years = [y for y in range(start_year, current_year + 1)]
+years = [y for y in range(start_year, current_year)]
 
 # Headers
 headers = {
@@ -128,18 +128,18 @@ keep = [
     "photo_url",
 ]
 
-df["date"] = df["date"].astype(str)
+df['date'] = pd.to_datetime(df['date']).dt.strftime('%Y-%m-%d')
 
 officers_df = df.drop(["name", "eow", "agency"], axis=1)[keep].copy()
 
 # Export to CSV
 officers_df.to_csv(
-    "data/processed/us_slain_police_officers_archive_1900_present.csv", index=False
+    "data/processed/us_slain_police_officers_archive_1900_2023.csv", index=False
 )
 
 # Export to JSON
 officers_df.to_json(
-    "data/processed/us_slain_police_officers_archive_1900_present.json",
+    "data/processed/us_slain_police_officers_archive_1900_2023.json",
     indent=4,
     orient="records",
 )
