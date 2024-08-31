@@ -41,7 +41,7 @@ It's timed to run automatically at 6:29 pm Central Time on Sundays in memory of 
 
 The data are stored on Amazon S3 in CSV and JSON formats.
 
-The JSON file is a list of dictionaries that contain the following items: 
+The JSON file has a list of dictionaries. Each contains the following items: 
 
 ```json
     {
