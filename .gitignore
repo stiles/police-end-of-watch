@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 notebooks/
+data/processed/backup/
 
 Pipfile
 Pipfile.lock

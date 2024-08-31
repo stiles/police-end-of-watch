@@ -1,7 +1,6 @@
 Constable
 Jailer
 Captain
-Sergeant
 Lieutenant
 Sheriff
 Policeman
@@ -9,10 +8,9 @@ Officer
 Peace
 Patrolman
 Dispatcher
-Police
+Police Chief
 Detective
 Inspector
-III
 Investigator
 K9
 Marshal
@@ -28,6 +26,7 @@ Ranger
 Master-at-Arms
 Guard
 First Class
+III
 II
 Trooper
 Lighthorseman
@@ -45,7 +44,6 @@ Warden
 Driver
 Doorman
 Employee
-Chief
 Superintendent
 Supervisor 1
 Coroner
@@ -91,3 +89,5 @@ ATSAIC
 Coordinator
 Worker
 Instructor
+Police
+Sergeant

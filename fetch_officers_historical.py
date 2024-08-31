@@ -86,7 +86,6 @@ df[["department_name", "state_abbreviation"]] = df["agency"].str.rsplit(
 # Lighten dataframe by removing repeated characters from urls
 df.loc[df['photo_url'].str.contains('no-photo'), 'photo_url'] = ''
 df['photo_url'] = df['photo_url'].str.replace('https://www.odmp.org/media/image/officer/', '')
-df['url'] = df['url'].str.replace('https://www.odmp.org/officer/', '')
 
 # Process the end-of-watch dates
 df["date"] = pd.to_datetime(df["eow"]).dt.strftime('%Y-%m-%d')
@@ -115,6 +114,7 @@ df["officer_name"] = df["name"].str.replace(pattern, "", regex=True).str.strip()
 
 # Keep the columns we want, in the order we want
 keep = [
+    "name",
     "officer_name",
     "title",
     "department_name",
@@ -130,7 +130,7 @@ keep = [
 
 df['date'] = pd.to_datetime(df['date']).dt.strftime('%Y-%m-%d')
 
-officers_df = df.drop(["name", "eow", "agency"], axis=1)[keep].copy()
+officers_df = df.drop(["eow", "agency"], axis=1)[keep].copy()
 
 # Export to CSV
 officers_df.to_csv(
