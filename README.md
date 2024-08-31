@@ -21,7 +21,7 @@ Basic information about the officers is fetched from [annual collection pages](h
 
 - `fetch_officers.py`: A script that fetches a list of officers and their detailed information from the current year and then combines it with the historical data, removing any duplicates, and storing a combined final archive.
 
-Note: The script attempt to split the combined title/name of each officer using a list of common titles and a regular expression pattern. This process is imperfect and needs adjustment. The original `name` field has been retained for that purpose.
+Note: These two script try to split the combined title/name of each officer using a list of common law enforcement titles and a regular expression pattern. This process is imperfect, however, and needs adjustment. The original `name` field has been retained because of [this issue](https://github.com/stiles/police-end-of-watch/issues/1).
 
 ```python
 # Read sample officer titles list to help split names/titles
