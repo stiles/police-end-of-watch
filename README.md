@@ -12,7 +12,7 @@ Basic information about the officers is fetched from [annual collection pages](h
 - `fetch_officers_historical.py`: A one-off script that fetched fallen officer information from 1900-2023.
 - `fetch_officers.py`: A script that fetches a list of officers and their detailed information from the current year and then combines it with the historical data, removing any duplicates, and storing a combined final archive.
 
-Note: Both scripts attempt to split the combined title/name of each officer using a list of common titles and a regular expression pattern. This process is imperfect works in most cases but is imperfect and needs adjustment. The original `name` field has been retained for that purpose.
+Note: Both scripts attempt to split the combined title/name of each officer using a list of common titles and a regular expression pattern. This process is imperfect and needs adjustment. The original `name` field has been retained for that purpose.
 
 ```python
 # Read sample officer titles list to help split names/titles
