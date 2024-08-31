@@ -21,7 +21,7 @@ Basic information about the officers is fetched from [annual collection pages](h
 
 - `fetch_officers.py`: A script that fetches a list of officers and their detailed information from the current year and then combines it with the historical data, removing any duplicates, and storing a combined final archive.
 
-Note: These two script try to split the combined title/name of each officer using a list of common law enforcement titles and a regular expression pattern. This process is imperfect, however, and needs adjustment. The original `name` field has been retained because of [this issue](https://github.com/stiles/police-end-of-watch/issues/1).
+Note: These two scripts try to split the combined title and name included for each officer by using a list of common law enforcement titles and a regular expression pattern. 
 
 ```python
 # Read sample officer titles list to help split names/titles
@@ -37,6 +37,8 @@ df["title"] = df["name"].str.extract(pattern)
 # Replace the title in the name with an empty string and strip any leading/trailing spaces
 df["officer_name"] = df["name"].str.replace(pattern, "", regex=True).str.strip()
 ```
+
+This process is imperfect, however, and needs adjustment so the resulting `title` and `officer_name` items are correct in all cases. *The original `name` field has been retained because of [this issue](https://github.com/stiles/police-end-of-watch/issues/1).*
 
 #### Geographic data
 
