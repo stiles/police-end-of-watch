@@ -9,14 +9,19 @@ This code in this repository collects, processes and stores information about mo
 
 ## Process
 
-#### Scripts
+### Scripts
 
 Basic information about the officers is fetched from [annual collection pages](https://www.odmp.org/search/year/2024) on the group's website using Python, and then further details are extracted from each officer's memorial page, such as [this one](https://www.odmp.org//officer//15488-police-officer-aubrey-wright-hawkins). 
 
+#### Historical data
+
 - `fetch_officers_historical.py`: A one-off script that fetched fallen officer information from 1900-2023.
+
+#### Current data
+
 - `fetch_officers.py`: A script that fetches a list of officers and their detailed information from the current year and then combines it with the historical data, removing any duplicates, and storing a combined final archive.
 
-Note: Both scripts attempt to split the combined title/name of each officer using a list of common titles and a regular expression pattern. This process is imperfect and needs adjustment. The original `name` field has been retained for that purpose.
+Note: The script attempt to split the combined title/name of each officer using a list of common titles and a regular expression pattern. This process is imperfect and needs adjustment. The original `name` field has been retained for that purpose.
 
 ```python
 # Read sample officer titles list to help split names/titles
@@ -33,17 +38,25 @@ df["title"] = df["name"].str.extract(pattern)
 df["officer_name"] = df["name"].str.replace(pattern, "", regex=True).str.strip()
 ```
 
-*Scripts for analyzing trends by year, geography, department, officer type (including canines), and causes of death will be added.*
+#### Geographic data
 
-#### Automation
+- `process_officer_locations.py`: Creates a GeoDataFrame from an officer's locations using latitude and longitude coordinates provided by the source, adding a country name and ISO three-digit codes from reference files. It then plots a several static maps by the causes — gunfire, terrorist attacks and automobile crashes, among others — and stores them in the `visuals` directory. 
 
-The collection is kept current by adding new cases to a running archive with a Github Actions workflow. 
+#### Coming soon
 
-It's timed to run automatically at 6:29 pm Central Time on Sundays in memory of the late [Aubrey Hawkins](https://www.odmp.org/officer/15488-police-officer-aubrey-wright-hawkins), a police officer in Irving, Texas, who was shot and killed on Christmas Eve in 2000 while responding to a robbery-in-progress call at a sporting goods store.
+*Scripts for analyzing trends by year, additional geography questions, department, officer type (including canines) and causes of death will be added eventually. Please [get in touch](mailto:mattstiles@gmail.com) to suggest ideas.*
+
+## Automation
+
+The collection is kept current by adding new cases to a running archive with a Github Actions workflow: `.github/workflows/fetch_officers.yml`. 
+
+It's timed to run automatically at 6:29 pm Central Time on Sundays in memory of the late [Aubrey Hawkins](https://www.odmp.org/officer/15488-police-officer-aubrey-wright-hawkins), a police officer in Irving, Texas, who was shot and killed on Christmas Eve in 2000 while responding to a robbery-in-progress call at a sporting goods store. I was a student in nearby Arlington, Texas, at the time. 
 
 ## Outputs
 
 The data are stored on Amazon S3 in CSV, JSON and GeoJSON formats.
+
+### Storage
 
 #### Slain officers, current year
 Formats: [CSV](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_2024.csv) | [JSON](https://stilesdata.com/police-end-of-watch/us_slain_police_officers_2024.json)
@@ -156,5 +169,7 @@ The code in this project is licensed under Creative Commons. See the [LICENSE](L
 ## About 
 
 The project, a work in progress, is a non-commercial exercise to analyze trends related to fallen officers and to demonstrate the process of building automated data pipelines. It is not affiliated with my employer.
+
+## Contact 
 
 Questions? [Holler](mailto:mattstiles@gmail.com)
