@@ -70,7 +70,7 @@ To set up the project and run the data collection scripts, follow these steps:
 
 ## Contributing
 
-Please submit any issues or pull requests to contribute to this project. Questions? [Holler](mailto:mattstiles@gmail.com).
+Please submit any issues or pull requests to contribute to this project.
 
 ## License
 
