@@ -96,7 +96,7 @@ for cause in selected_causes:
         f"Fallen officer locations, 1900-present: {cause}",
         fontsize=16,
         fontweight="bold",
-        fontname="Roboto",
+        fontname="DejaVu Sans",
         # color="#374f6b",
         loc="center",
     )
