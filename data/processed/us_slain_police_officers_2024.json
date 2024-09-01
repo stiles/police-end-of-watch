@@ -2068,6 +2068,28 @@
         "lon":"-96.8110620"
     },
     {
+        "name":"Officer Phylicia Carson",
+        "officer_name":"Phylicia Carson",
+        "title":"Officer",
+        "department_name":"Osage Beach Police Department",
+        "state_abbreviation":"MO",
+        "cause":"Vehicle pursuit",
+        "date":"2024-08-31",
+        "year":2024,
+        "weekday":"Saturday",
+        "canine":false,
+        "url":"https:\/\/www.odmp.org\/officer\/27128-officer-phylicia-carson",
+        "photo_url":"27128\/125\/c_phylicia-carson.jpg",
+        "incident_description":"Officer Phylicia Carson was killed in a vehicle crash at about 1:30 am while responding to assist another officer who was pursuing a vehicle.\n\nHer patrol car left the roadway and struck a tree on Highway A near Toronto Springs Park Road. A Camden County Sheriff's Office deputy discovered her patrol car on fire in the tree line.\n\nThe driver of the vehicle that was being pursued crashed a short distance away and was taken into custody.\n\nOfficer Carson had served with the Osage Beach Police Department for one year. She is survived by her husband and six children.",
+        "age":"33",
+        "tour":"1 year",
+        "badge":"916",
+        "weapon":"Automobile",
+        "offender":"Not available",
+        "lat":"37.9949168",
+        "lon":"-92.5137080"
+    },
+    {
         "name":"K9 Nyx",
         "officer_name":"Nyx",
         "title":"K9",
