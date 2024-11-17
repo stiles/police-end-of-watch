@@ -2990,5 +2990,27 @@
         "offender":"Shot and killed",
         "lat":"36.5466645",
         "lon":"-80.5547339"
+    },
+    {
+        "name":"K9 Titan",
+        "officer_name":"Titan",
+        "title":"K9",
+        "department_name":"Coweta County Sheriff's Office",
+        "state_abbreviation":"GA",
+        "cause":"Gunfire",
+        "date":"2024-11-13",
+        "year":2024,
+        "weekday":"Wednesday",
+        "canine":true,
+        "url":"https:\/\/www.odmp.org\/k9\/1933-k9-titan",
+        "photo_url":"https:\/\/www.odmp.org\/media\/image\/k9\/1933\/125\/c_c_titan.jpg",
+        "incident_description":"K9 Titan was shot and killed while officers attempted to apprehend a driver who did not pull over for a traffic stop on Roosevelt Highway in Fairburn.\n\nAt 11:00 p.m., when a deputy initiated a traffic stop and the driver did not stop, a chase ensued, reaching speeds of 110 mph. Using a PIT maneuver, deputies were able to stop the fleeing vehicle. K9 Titan was released to apprehend the driver. But the driver fired at deputies, Fairburn Police Department officers, and K9 Titan, striking K9 Titan multiple times. Officers returned fire, killing the suspect. \n\nK9 Titan died at the scene. One deputy was injured. He was treated and released from a local hospital. \n\nK9 Titan had served with the Coweta County Sheriff's Office for over five years.",
+        "age":"Not available",
+        "tour":"5 years",
+        "badge":null,
+        "weapon":"Rifle; AK-47",
+        "offender":"Shot and killed",
+        "lat":"33.5378599",
+        "lon":"-84.6259122"
     }
 ]
