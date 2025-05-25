@@ -550,6 +550,28 @@
         "lon":"-92.2650281"
     },
     {
+        "name":"Deputy Sheriff Nathaniel Ansay",
+        "officer_name":"Nathaniel Ansay",
+        "title":"Deputy",
+        "department_name":"Florence County Sheriff's Office",
+        "state_abbreviation":"SC",
+        "cause":"Automobile crash",
+        "date":"2025-05-20",
+        "year":2025,
+        "weekday":"Tuesday",
+        "canine":false,
+        "url":"https:\/\/www.odmp.org\/officer\/27403-deputy-sheriff-nathaniel-ansay",
+        "photo_url":"27403\/125\/c_ansay.jpg",
+        "incident_description":"Deputy Sheriff Nate Ansay was killed in a vehicle crash on State Highway 301 in Effingham around 4:20 p.m.\n\nDeputy Ansay was traveling northbound on Highway 301 between Langston Road and Meadow Prong Road when his patrol vehicle collided head-on with an SUV traveling southbound. He was transported to the hospital, where he succumbed to his injuries. \n\nThe other driver was also hospitalized. \n\nDeputy Ansay had served with the Florence County Sheriff's Office for over one year.",
+        "age":"24",
+        "tour":"1 year, 2 months",
+        "badge":"274",
+        "weapon":null,
+        "offender":null,
+        "lat":"34.0317701",
+        "lon":"-79.8275623"
+    },
+    {
         "name":"K9 Kaya",
         "officer_name":"Kaya",
         "title":"K9",
@@ -724,5 +746,27 @@
         "offender":null,
         "lat":"37.2984484",
         "lon":"-80.0046327"
+    },
+    {
+        "name":"K9 Kai",
+        "officer_name":"Kai",
+        "title":"K9",
+        "department_name":"Bristol Police Department",
+        "state_abbreviation":"TN",
+        "cause":"Heatstroke",
+        "date":"2025-04-24",
+        "year":2025,
+        "weekday":"Thursday",
+        "canine":true,
+        "url":"https:\/\/www.odmp.org\/k9\/1945-k9-kai",
+        "photo_url":"https:\/\/www.odmp.org\/media\/image\/k9\/1945\/125\/c_kai.jpg",
+        "incident_description":"K9 Kai succumbed to heatstroke after completing his annual certification training at 361 Exide Drive in Bristol.\n\nWhen K9 Kai became overheated during training at 5:30 p.m., attempts were made to cool him down, but he collapsed. K9 Kai was transported to an emergency clinic, where his condition continued to deteriorate. He passed away the following day. \n\nK9 Kai had served with the Bristol Police Department for seven years. Kai had completed 1691 hours of training, conducted 175 explosive searches, and was responsible for 21 suspect apprehensions. He was also called to assist federal, state, and local law enforcement agencies throughout the region 57 times.",
+        "age":"8",
+        "tour":"7 years",
+        "badge":null,
+        "weapon":null,
+        "offender":null,
+        "lat":"36.5232061",
+        "lon":"-82.2683559"
     }
 ]
