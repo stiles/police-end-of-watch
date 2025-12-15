@@ -54,6 +54,8 @@ The collection is kept current by adding new cases to a running archive with a G
 
 It's timed to run automatically at 6:29 pm Central Time on Sundays in memory of the late [Aubrey Hawkins](https://www.odmp.org/officer/15488-police-officer-aubrey-wright-hawkins), a police officer in Irving, Texas, who was shot and killed on Christmas Eve in 2000 while responding to a robbery-in-progress call at a sporting goods store. I was a student in nearby Arlington, Texas, at the time. 
 
+**Workflow disabled on Dec. 15, 2025.**
+
 ## Outputs
 
 The data are stored on Amazon S3 in CSV, JSON and GeoJSON formats.
